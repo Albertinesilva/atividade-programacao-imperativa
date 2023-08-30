@@ -1,24 +1,30 @@
-/*b. Modifique o exercício anterior para que a saída imprima também o código numérico em octal e em hexadecimal.*/
-
-#include <iostream>
-#include <string>
+#include<iostream>
 
 using namespace std;
 
-int main()
-{
-    char a;
+int main(){
 
-    // printf("Caractere: '%c', Decimal: %i, Octal: 0%o, exadecimal: %x \n", '0', '0', '0', '0');
+    char ch0 = '0';
+    char ch1 = '1';
+    char ch2 = '2';
+    char ch3 = '3';
+    char ch4 = '4';
+    char ch5 = '5';
+    char ch6 = '6';
+    char ch7 = '7';
+    char ch8 = '8';
+    char ch9 = '9';
+    
+    cout << "'" << ch0 << "' - " << (int)ch0 << " - "  << oct << (int)ch0 <<  " - "  << hex << (int)ch0 << endl;
+    cout << "'" << ch1 << "' - " << (int)ch1 << " - "  << oct << (int)ch1 <<  " - "  << hex << (int)ch1 << endl;
+    cout << "'" << ch2 << "' - " << (int)ch2 << " - "  << oct << (int)ch2 <<  " - "  << hex << (int)ch2 << endl;
+    cout << "'" << ch3 << "' - " << (int)ch3 << " - "  << oct << (int)ch3 <<  " - "  << hex << (int)ch3 << endl;
+    cout << "'" << ch4 << "' - " << (int)ch4 << " - "  << oct << (int)ch4 <<  " - "  << hex << (int)ch4 << endl;
+    cout << "'" << ch5 << "' - " << (int)ch5 << " - "  << oct << (int)ch5 <<  " - "  << hex << (int)ch5 << endl;
+    cout << "'" << ch6 << "' - " << (int)ch6 << " - "  << oct << (int)ch6 <<  " - "  << hex << (int)ch6 << endl;
+    cout << "'" << ch7 << "' - " << (int)ch7 << " - "  << oct << (int)ch7 <<  " - "  << hex << (int)ch7 << endl;
+    cout << "'" << ch8 << "' - " << (int)ch8 << " - "  << oct << (int)ch8 <<  " - "  << hex << (int)ch8 << endl;
+    cout << "'" << ch9 << "' - " << (int)ch9 << " - "  << oct << (int)ch9 <<  " - "  << hex << (int)ch9 << endl;
 
-    cout << (a = '0') << dec << ", dec - " << int('0') << oct << ", oct - 0" << int('0') << hex << ", hex - " << int('0') << '\n';
-    cout << (a = '1') << dec << ", dec - " << int('1') << oct << ", oct - 0" << int('1') << hex << ", hex - " << int('1') << '\n';
-    cout << (a = '2') << dec << ", dec - " << int('2') << oct << ", oct - 0" << int('2') << hex << ", hex - " << int('2') << '\n';
-    cout << (a = '3') << dec << ", dec - " << int('3') << oct << ", oct - 0" << int('3') << hex << ", hex - " << int('3') << '\n';
-    cout << (a = '4') << dec << ", dec - " << int('4') << oct << ", oct - 0" << int('4') << hex << ", hex - " << int('4') << '\n';
-    cout << (a = '5') << dec << ", dec - " << int('5') << oct << ", oct - 0" << int('5') << hex << ", hex - " << int('5') << '\n';
-    cout << (a = '6') << dec << ", dec - " << int('6') << oct << ", oct - 0" << int('6') << hex << ", hex - " << int('6') << '\n';
-    cout << (a = '7') << dec << ", dec - " << int('7') << oct << ", oct - 0" << int('7') << hex << ", hex - " << int('7') << '\n';
-    cout << (a = '8') << dec << ", dec - " << int('8') << oct << ", oct - 0" << int('8') << hex << ", hex - " << int('8') << '\n';
-    cout << (a = '9') << dec << ", dec - " << int('9') << oct << ", oct - 0" << int('9') << hex << ", hex - " << int('9') << '\n';
+    return 0 ;
 }

@@ -1,5 +1,6 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "iostream": "cpp",
         "array": "cpp",
         "atomic": "cpp",
@@ -43,5 +44,8 @@
         "typeinfo": "cpp",
         "ctime": "cpp",
         "iomanip": "cpp"
+=======
+        "ostream": "cpp"
+>>>>>>> 88a0ec3 (exercicio 2.(abc) conclido)
     }
 }
