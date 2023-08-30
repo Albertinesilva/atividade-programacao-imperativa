@@ -11,13 +11,9 @@ using namespace std;
 int main()
 {
 
-    // cout << "\nMenor valor: short int ocupa " << sizeof(short int) << " bytes na memória." << endl;
-    // cout << "\nMaior valor: long long int ocupa " << sizeof(long long int) << " bytes na memória.\n";
-
-    int intMaior = numeric_limits<int>::max();
-    int intMenor = numeric_limits<int>::min();
-
-    cout << "Maior valor de unsigned long int: " << intMaior << endl;
-    cout << "Menor valor de unsigned long int: " << intMenor << endl;
+    int maiorInteiroComSinal = 0x7FFFFFFF;
+    
+    cout << "Maior inteiro com sinal : " << maiorInteiroComSinal << endl;
+    cout << "Menor inteiro com sinal : " << (maiorInteiroComSinal+1) << endl;
 
 }

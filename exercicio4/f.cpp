@@ -1,21 +1,21 @@
-/*f. No seu sistema existe diferença entre o tipo double e long double? Mostre seu achado com algum exemplo dentro do seu código.*/
-
-#include <iostream>
-#include <iomanip>
+#include<iostream>
+#include<limits>
 
 using namespace std;
 
-// Tipo double pode armazenar até 12 casas 
 int main(){
 
-    double pid = 3.141592653589;
-    float pif = 3.141592653589;
-    cout << setprecision(12) << fixed;
+    double maiorValordouble = numeric_limits<double>::max();
+    long double maiorValorLongdouble = numeric_limits<long double>::max();
 
-    cout << "\nDouble\n";
-    cout << pid << "\n";
-    
-    cout << "\nFloat\n";
-    cout << pif << "\n";
-    
+    cout << "Maior valor do double :" << maiorValordouble << endl;
+    cout << "Maior valor do long double :" << maiorValorLongdouble << endl;
+
+    /*
+    Linux ubuntu : 
+    Maior valor do double :1.79769e+308
+    Maior valor do long double :1.18973e+4932
+    */
+
+    return 0;
 }

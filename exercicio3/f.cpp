@@ -1,23 +1,15 @@
-/*f. Atribua a ui o maior valor que pode ser armazenado num unsigned int (identifique qual o menor e o maior valor que pode ser representado);*/
-
-#include <iostream>
-#include <limits>
+#include<iostream>
 
 using namespace std;
 
-/*Atribua a ui o maior valor que pode ser armazenado num
-unsigned int (identifique qual o menor e o maior valor que pode
-ser representado);*/
-
 int main(){
 
-    //maior valor que pode ser armazenado num unsigned int = 4294967295
-    unsigned int ui = numeric_limits<unsigned int>::max();
+    unsigned int maiorInteiroSemSinal = 0xFFFFFFFF;
 
-    //menor valor que pode ser armazenado num unsigned int = 0
-    unsigned int menorUnsignerInt = numeric_limits<unsigned int>::min();
+    cout << "Maior inteiro sem sinal : " << maiorInteiroSemSinal << endl;
+    cout << "Menor inteiro sem sinal : " << (maiorInteiroSemSinal+1) << endl;
 
-    cout << "ui: " << ui << endl;
-    cout << "menorUnsignerInt: " << menorUnsignerInt << endl;
-    
+
+
+    return 0;
 }

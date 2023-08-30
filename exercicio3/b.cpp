@@ -1,16 +1,14 @@
-/*b. Crie uma variável uli, de tipo unsigned long int, atribua a ela o maior valor que pode ser armazenado neste tipo de dado
-(identifique qual o menor e o maior valor que pode ser representado);*/
-
-#include <iostream>
-#include <limits>
+#include<iostream>
 
 using namespace std;
 
 int main(){
 
-    unsigned long int uli = numeric_limits<unsigned long int>::max();
-    unsigned long int menorUnsignedLong = numeric_limits<unsigned long int>::min();
+    unsigned long int maiorLongSemSinal = 0xFFFFFFFFFFFFFFFF;
+    
+    cout << "Maior long int sem sinal : " << maiorLongSemSinal << endl;
+    cout << "Menor long int sem sinal : " << (maiorLongSemSinal+1) << endl;
 
-    cout << "Maior valor de unsigned long int: " << uli << endl;
-    cout << "Menor valor de unsigned long int: " << menorUnsignedLong << endl;
+
+    return 0;
 }
