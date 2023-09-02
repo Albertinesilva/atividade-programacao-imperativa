@@ -11,6 +11,5 @@ int main(){
     cout << "Valores numericos iguais de 0 sao convertivos para bool como : " << (bool)numero2 << endl; 
 
 
-
     return 0;
 }
